@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.pearson.qa.ocv2</groupId>
+  <artifactId>entire-java-code-project</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>entire-java-code-project</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    
+	<!-- DEP 1 :: JUNIT --> 
+	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	
+	<!-- DEP 2 :: GOOGLE INJECT -->
+    <dependency>
+    <groupId>com.google.inject</groupId>
+    <artifactId>guice</artifactId>
+    <version>3.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\google guice 3.0\com\google\inject\guice\3.0\guice-3.0.jar</systemPath>
+    </dependency>
+
+	<!-- DEP 3:: GOOGLE ASSISTED INJECT --> 
+	<dependency>
+    <groupId>com.google.inject.extensions</groupId>
+    <artifactId>guice-assistedinject</artifactId>
+    <version>3.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\google guice 3.0\com\google\inject\extensions\guice-assistedinject\3.0\guice-assistedinject-3.0.jar</systemPath>
+    </dependency>
+
+	<!-- DEP 4 :: JAVAX  INJECT --> 
+	<dependency>
+    <groupId>javax.inject</groupId>
+    <artifactId>inject</artifactId>
+    <version>1.0</version>
+	<scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\google guice 3.0\com\google\inject\guice\3.0\javax-inject.jar</systemPath>
+    </dependency>
+
+	
+	<!-- DEP 5 :: LOG4J -->
+    <dependency>
+    <groupId>org.apache.log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\log4j 1.2.17\org\apache\log4j\log4j-1.2.17.jar</systemPath>
+    </dependency>
+  	
+	<!-- DEP 6 :: TESTNG --> 
+	<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.8.7</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\testNg 6.8.7\org\testng\testng\testng-6.8.7.jar</systemPath>
+    </dependency>
+  	
+
+	<!-- DEP 7 :: AOPALLINACE - for MethodIntercept --> 
+	<dependency>
+    <groupId>Lorg.aopalliance</groupId>
+    <artifactId>aopalliance</artifactId>
+    <version>1.0</version>
+    <scope>system</scope>
+    <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\aopalliance 1.0\Lorg\aopalliance\aopalliance - 1.0.jar</systemPath>
+    </dependency>
+  	
+
+	
+  </dependencies>
+</project>
