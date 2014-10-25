@@ -70,7 +70,6 @@
     <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\testNg 6.8.7\org\testng\testng\testng-6.8.7.jar</systemPath>
     </dependency>
   	
-
 	<!-- DEP 7 :: AOPALLINACE - for MethodIntercept --> 
 	<dependency>
     <groupId>Lorg.aopalliance</groupId>
@@ -80,7 +79,13 @@
     <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\aopalliance 1.0\Lorg\aopalliance\aopalliance - 1.0.jar</systemPath>
     </dependency>
   	
+    <!-- DEP 8 :: JACKSON CORE DATA BIN OBJECT MAPPER -->
 
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-mapper-asl</artifactId>
+		<version>1.8.5</version>
+	</dependency>
 	
   </dependencies>
 </project>

@@ -1,12 +1,9 @@
 package com.pearson.qa.ocv2.DependencyInjection.pages.Cars;
 
 import com.google.inject.Inject;
+import com.google.inject.assistedinject.Assisted;
 import com.pearson.qa.ocv2.DependencyInjection.interfaces.Gas;
 import com.pearson.qa.ocv2.DependencyInjection.interfaces.Tire;
-import com.pearson.qa.ocv2.DependencyInjection.Factories.TireFactory;
-import com.pearson.qa.ocv2.DependencyInjection.pages.gas.Leaded;
-import com.pearson.qa.ocv2.DependencyInjection.pages.tires.DunlopTires;
-import org.testng.annotations.Test;
 
 /**
  * Created by Sunil Kumar on 10/17/2014.
@@ -15,9 +12,12 @@ public class Car {
 
      Tire tires;
      Gas gas;
+     String key;
 
     // constructors
-    public Car() {
+    @Inject
+    public Car(@Assisted String key) {
+        this.key = key;
      }
 
     // getters
@@ -28,7 +28,7 @@ public class Car {
         return gas;
     }
 
-    // setters
+    // annotated setters
     @Inject
     public void setTires(Tire tires) {
         this.tires = tires;
@@ -40,8 +40,9 @@ public class Car {
     }
 
     // turn on boolean to return exact state whether injection worked or not.
-    public boolean turnOn() {
-        return (this.tires!=null && this.gas!=null );
+    public boolean turnOn(String key) {
+        return (this.tires!=null &&
+                this.gas!=null  && this.key.equals(key));
     }
 
 }
