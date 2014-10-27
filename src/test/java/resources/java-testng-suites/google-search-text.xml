@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
+<suite name="Google search text suite">
+
+    <test name="Google search text">
+        <classes>
+
+            <class name="com.pearson.qa.ocv2.tests.ui.pages.GooglePageTest"/>
+
+        </classes>
+        <groups>
+            <run>
+                <include name="google.search.text"/>
+
+            </run>
+        </groups>
+    </test>
+
+</suite>

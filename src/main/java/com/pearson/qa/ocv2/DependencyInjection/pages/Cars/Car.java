@@ -14,6 +14,10 @@ public class Car {
      Gas gas;
      String key;
 
+    public void setKey(String key) {
+        this.key = key;
+    }
+
     // constructors
     @Inject
     public Car(@Assisted String key) {
@@ -44,5 +48,4 @@ public class Car {
         return (this.tires!=null &&
                 this.gas!=null  && this.key.equals(key));
     }
-
 }

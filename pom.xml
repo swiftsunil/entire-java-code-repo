@@ -79,13 +79,95 @@
     <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\aopalliance 1.0\Lorg\aopalliance\aopalliance - 1.0.jar</systemPath>
     </dependency>
   	
-    <!-- DEP 8 :: JACKSON CORE DATA BIN OBJECT MAPPER -->
-
+    <!-- DEP 8 :: JACKSON CORE DATA BIN OBJECT MAPPER -->	
 	<dependency>
 		<groupId>org.codehaus.jackson</groupId>
 		<artifactId>jackson-mapper-asl</artifactId>
 		<version>1.8.5</version>
+		<scope>system</scope>
+	     <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\jackson 1.8.5\org\codehaus\jackson\jackson-mapper-asl\1.8.5\jackson-mapper-asl-1.8.5.jar</systemPath>	
 	</dependency>
 	
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-core-asl</artifactId>
+		<version>1.8.5</version>
+		<scope>system</scope>
+	     <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\jackson 1.8.5\org\codehaus\jackson\jackson-core-asl\1.8.5\jackson-core-asl-1.8.5.jar</systemPath>	
+	</dependency>
+	
+	
+	  <!--DEP 4 :: UI DRIVER MANAGER --> 
+        <dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>ui-driver-manager</artifactId>
+            <version>1.2-SNAPSHOT</version>
+        </dependency>
+        
+		<dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>ui-driver-manager</artifactId>
+            <version>1.2-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+		
+		<!-- DEP 5 :: UTILITIES --> 
+        <dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>utilities</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>utilities</artifactId>
+            <version>1.2</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+		<!-- DEP 6 :: com.lispcast --> 
+        <dependency>
+            <groupId>com.lispcast</groupId>
+            <artifactId>org.apache.commons.lang</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+		<!-- DEP 7 :: ZIGGY FRAMEWORK 1.15 --> 
+        <dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>ziggyfw</artifactId>
+            <version>1.15</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pearson.qa.common</groupId>
+            <artifactId>ziggyfw</artifactId>
+            <version>1.15</version>
+            <classifier>sources</classifier>
+        </dependency>
+		
+		<!-- DEP 8 :: OCV2 TESTS JAR TO USE UI TEST BASE -->  
+      <dependency>
+         <groupId>com.pearson.qa.ocv2</groupId>
+         <artifactId>ocv2-tests</artifactId>
+         <version>1.0-SNAPSHOT</version>
+      </dependency>
+	  
+	  
+	  <!-- DEP :: ESELENIUM FRAMEWORK -->
+	  <dependency>
+           <groupId> com.pearson</groupId>
+		   <artifactId>eselenium.framework</artifactId> 
+		   <version>1.2.2</version>
+		   <scope>system</scope>
+		   <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\eselenium framework 1.2.2\com\pearson\eselenium.framework\1.2.2\eselenium.framework-1.2.2.jar</systemPath>
+       </dependency>	  
+	
+	  <dependency> 
+	       <groupId>com.pearson</groupId>
+           <artifactId>eselenium.framework</artifactId>
+           <version>1.2.2</version>
+           <scope>system</scope>
+           <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\eselenium framework 1.2.2\com\pearson\eselenium.framework\1.2.2\eselenium.framework-1.2.2-sources.jar</systemPath> 		    
+	
   </dependencies>
+  
 </project>

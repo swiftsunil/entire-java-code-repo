@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.pearson.qa.common:configuration:1.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/configuration/1.2/configuration-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/configuration/1.2/configuration-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/configuration/1.2/configuration-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

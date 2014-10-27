@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.pearson.qa.common:ui-driver-manager:1.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/ui-driver-manager/1.2-SNAPSHOT/ui-driver-manager-1.2-20140819.162833-3600.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/ui-driver-manager/1.2-SNAPSHOT/ui-driver-manager-1.2-20140819.162833-3600-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pearson/qa/common/ui-driver-manager/1.2-SNAPSHOT/ui-driver-manager-1.2-20140819.162833-3600-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
