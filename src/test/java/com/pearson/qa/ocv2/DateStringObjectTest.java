@@ -1,5 +1,6 @@
 package com.pearson.qa.ocv2;
 
+import com.pearson.qa.common.exceptions.RequirementsException;
 import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
@@ -26,8 +27,9 @@ public class DateStringObjectTest {
     Logger logger = Logger.getLogger(DateStringObjectTest.class);
 
     @Test
-    public void validateCourseStartDate() {
+    public void validateCourseStartDate() throws RequirementsException {
      String stringToBeTested = "Starts on Sunday, July 31, 2014";
+     String endDateString =  "Friday, October 28, 2044";
         StringBuilder retreiveDateString = new StringBuilder();
         retreiveDateString.append(stringToBeTested);
         retreiveDateString.delete(0,10);
@@ -38,11 +40,18 @@ public class DateStringObjectTest {
 
          try {
 
-             Date date = simpleDateFormat.parse(retreiveDateString.toString());
-             logger.debug("\nDate object extracted:: "+ date);
-             logger.debug("\n Formatted date object::"+ simpleDateFormat.format(date));
+             Date date1 = simpleDateFormat.parse(retreiveDateString.toString());
+             Date endDate = simpleDateFormat.parse(endDateString);
+             logger.debug("\nDate object extracted:: "+ date1);
+             boolean isInputDateBefore = true;
+             if (endDate.before(date1))
+                logger.debug("\nendDate:: " + endDateString +
+                        " \nis before \ndate1:: " + retreiveDateString.toString() );
+               else
+                 logger.debug("\nendDate:: " + endDateString +
+                         " \nis after \ndate1:: " + retreiveDateString.toString() );
 
-        }catch (ParseException e ) {
+         }catch (ParseException e ) {
            e.printStackTrace(); }
     }
 
