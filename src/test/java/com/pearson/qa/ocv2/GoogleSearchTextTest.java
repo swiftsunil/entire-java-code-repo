@@ -1,8 +1,8 @@
 package com.pearson.qa.ocv2;
 
 import com.pearson.qa.common.exceptions.RequirementsException;
-import com.pearson.qa.ocv2.eSeleniumGoogleSearchText.pageobjects.interfaces.pages.GoogleSearchInterface;
-import com.pearson.qa.ocv2.eSeleniumGoogleSearchText.pageobjects.web.pages.GoogleSearchWebPage;
+import com.pearson.qa.ocv2.eSeleniumGoogleSearchText.GoogleSearchInterface;
+import com.pearson.qa.ocv2.eSeleniumGoogleSearchText.GoogleSearchWebPage;
 import com.pearson.test.eselenium.framework.core.UIDriver;
 import com.pearson.test.eselenium.framework.drivers.DefaultUIDriver;
 import org.apache.log4j.Logger;
