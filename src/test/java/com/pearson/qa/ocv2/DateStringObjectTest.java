@@ -1,5 +1,6 @@
 package com.pearson.qa.ocv2;
 
+import org.apache.log4j.Logger;
 import org.testng.annotations.Test;
 
 import java.text.ParseException;
@@ -11,6 +12,39 @@ import java.util.Date;
  */
 public class DateStringObjectTest {
 
+//        Letter	Description	Examples
+//        y	Year	2013
+//        M	Month in year	July, 07, 7
+//        d	Day in month	1-31
+//        E	Day name in week	Friday, Sunday
+//        a	Am/pm marker	AM, PM
+//        H	Hour in day	0-23
+//        H	Hour in am/pm	1-12
+//        m	Minute in hour	0-60
+//        s	Second in minute	0-60
+
+    Logger logger = Logger.getLogger(DateStringObjectTest.class);
+
+    @Test
+    public void validateCourseStartDate() {
+     String stringToBeTested = "Starts on Sunday, July 31, 2014";
+        StringBuilder retreiveDateString = new StringBuilder();
+        retreiveDateString.append(stringToBeTested);
+        retreiveDateString.delete(0,10);
+
+        logger.debug("\nAppended string:: "+ retreiveDateString );
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEEE, MMMM dd, yyyy");
+
+         try {
+
+             Date date = simpleDateFormat.parse(retreiveDateString.toString());
+             logger.debug("\nDate object extracted:: "+ date);
+             logger.debug("\n Formatted date object::"+ simpleDateFormat.format(date));
+
+        }catch (ParseException e ) {
+           e.printStackTrace(); }
+    }
 
    @Test
     public void validateSimpleDateObject1() {
