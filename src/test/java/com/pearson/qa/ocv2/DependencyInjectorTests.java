@@ -53,13 +53,10 @@ public class DependencyInjectorTests {
                 lexus2.turnOn("lexus2"));
         logger.debug("Lexus 2 tire value:: " + lexus2.getTires().getTreadType() +
                 " Lexus 2 gas value:: "+ lexus2.getGas().getOctaneValue());
-
-
     }
 
     @Test(groups ={"java.dependency.injection.google.injection"})
     public void verifyGoogleInjectorInstantiation() {
-
         // 3) using  google injector
         SedanModule sedanModule = new SedanModule();
         Injector injector1 = Guice.createInjector(sedanModule);
@@ -71,7 +68,6 @@ public class DependencyInjectorTests {
         logger.debug("Lexus 3 tire, gas status:: " + lexus3.turnOn("Lexus"));
         logger.debug("Lexus 3 tire value:: " + lexus3.getTires().getTreadType() + " Lexus 3 gas value:: "
                 + lexus3.getGas().getOctaneValue() );
-
     }
 
    @Test(groups ={"java.injection.pageObjectFactoryAndAssistedPageObjectFactory"})

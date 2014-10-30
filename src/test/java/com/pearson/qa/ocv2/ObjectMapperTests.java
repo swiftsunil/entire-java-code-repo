@@ -20,7 +20,7 @@ public class ObjectMapperTests {
 Logger logger =  Logger.getLogger(ObjectMapperTests.class);
 
      @Test (groups = {"java.objectmapper.JavaObjToJson"})
-    public void verifyEmployeeJavaToJson() throws IOException {
+    public void writeEmployeeJavaObjectToJson() throws IOException {
 
        @SuppressWarnings("deprecation")
        Employee employee = new Employee(1, "Lokesh", "Gupta", new Date(1981,8,18));
@@ -32,7 +32,7 @@ Logger logger =  Logger.getLogger(ObjectMapperTests.class);
     }
 
     @Test
-    public void verifyJsonToJavaObj() throws IOException {
+    public void readJsonAndConvertToJavaObj() throws IOException {
 
             Employee employee = null;
             ObjectMapper mapper = new ObjectMapper();
