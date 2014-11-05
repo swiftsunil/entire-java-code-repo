@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.strategicgains.repoexpress:repoexpress-mongodb:0.4.0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/strategicgains/repoexpress/repoexpress-mongodb/0.4.0/repoexpress-mongodb-0.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/strategicgains/repoexpress/repoexpress-mongodb/0.4.0/repoexpress-mongodb-0.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/strategicgains/repoexpress/repoexpress-mongodb/0.4.0/repoexpress-mongodb-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
