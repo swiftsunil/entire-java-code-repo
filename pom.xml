@@ -167,7 +167,7 @@
            <version>1.2.2</version>
            <scope>system</scope>
            <systemPath>C:\Users\Sunil Kumar\Desktop\Tools and Languages\Automation Installation and Training folder\REPOSITORIES - folder\eselenium framework 1.2.2\com\pearson\eselenium.framework\1.2.2\eselenium.framework-1.2.2-sources.jar</systemPath> 		    
-	
+	   </dependency>
   </dependencies>
   
 </project>
